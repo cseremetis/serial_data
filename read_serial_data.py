@@ -1,12 +1,21 @@
 import serial
+<<<<<<< HEAD
 	
+=======
+import datetime
+
+>>>>>>> 726bc7d6f58c170037003677c806a98b5626f4b6
 #OPEN SERIAL PORT
 ser = serial.Serial('/dev/ttyACM0')
 print(ser.name)
 #ser.write(b'hello')
 
-#OPEN log file
-logfile=open("logfile.txt",w)
+#OPEN LOG FILE
+#clear it
+logfile=open("logfile.txt",'w')
+logfile.close()
+#open it for appending
+logfile=open("logfile.txt",'a')
 logfile.close()
 
 cnt=0;
@@ -49,18 +58,24 @@ while True:
     #Case 2: read data length = 42,10
     #CASE 3: read cycle keep alive
     
+    logfile=open("logfile.txt",'a')
+    
     #CASE 1: temperature data
     if len(list_converted)==18:
         temp=list_converted[14]
         temp2=int(temp, 16)
-        print "current reader temp Celcius: ",
-        print temp2
+        logfile.write("current reader temp Celcius: ")
+        logfile.write(str(temp2))
+        logfile.write("\n")
         
     #CASE 2: read data
     if len(list_converted)==10:
-        print "tage read"
+        print "tag read"
+        logfile.write("tag read at: ")
+        logfile.write(str(datetime.datetime.now().time()))
+        logfile.write("\n")
         
-    
+    logfile.close()
     
 #CLOSE SERIAL PORT        
 ser.close()
