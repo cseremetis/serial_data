@@ -1,5 +1,5 @@
 import serial
-
+	
 #OPEN SERIAL PORT
 ser = serial.Serial('/dev/ttyACM0')
 print(ser.name)
@@ -13,18 +13,18 @@ cnt=0;
 while True:
     #CASE 0: first time through loop
     if cnt == 0:#need read until we get an ff
-		current=''#initialize current to empty
-		while current.encode('hex')!='ff':#keep reading until we get ff
-			current=ser.read(1)
-		cnt=2
+   current=''#initialize current to empty
+   while current.encode('hex')!='ff':#keep reading until we get ff
+   current=ser.read(1)
+   cnt=2
         
-	#CASE 1: second time current will have 'ff' from previous packet
-	
-	#MAKE THE LIST: read the whole packet into list_tmp
-	#	step 1: add the first ff to the list 
+#CASE 1: second time current will have 'ff' from previous packet
+
+#MAKE THE LIST: read the whole packet into list_tmp
+#	step 1: add the first ff to the list 
     list_tmp=[]
     list_tmp.append(current)
-	#	step 2: loop through until we hit the next ff adding to list
+#	step 2: loop through until we hit the next ff adding to list
     current='00'
     while current.encode('hex')!='ff':
         current=ser.read(1)

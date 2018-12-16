@@ -1,6 +1,3 @@
-
-import datetime
-
 max_data = 248 #maximum data size in bytes
 
 #for decrypting epc, tag crc, and message crc
