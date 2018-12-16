@@ -1,0 +1,468 @@
+tag read at: 23:27:03.659245
+current reader temp Celcius: 27
+tag read at: 23:27:03.688629
+tag read at: 23:27:03.721591
+tag read at: 23:27:03.758089
+tag read at: 23:27:03.792076
+tag read at: 23:27:03.827348
+tag read at: 23:27:03.863865
+tag read at: 23:27:03.899094
+tag read at: 23:27:03.933095
+tag read at: 23:27:03.968343
+tag read at: 23:27:04.002380
+tag read at: 23:27:04.038870
+current reader temp Celcius: 26
+tag read at: 23:27:04.057867
+tag read at: 23:27:04.094613
+tag read at: 23:27:04.129865
+tag read at: 23:27:04.166421
+tag read at: 23:27:04.200376
+tag read at: 23:27:04.235704
+tag read at: 23:27:04.272162
+tag read at: 23:27:04.306207
+tag read at: 23:27:04.344139
+tag read at: 23:27:04.377966
+current reader temp Celcius: 26
+current reader temp Celcius: 27
+current reader temp Celcius: 27
+current reader temp Celcius: 27
+current reader temp Celcius: 28
+current reader temp Celcius: 27
+current reader temp Celcius: 28
+current reader temp Celcius: 29
+current reader temp Celcius: 28
+current reader temp Celcius: 29
+current reader temp Celcius: 30
+current reader temp Celcius: 29
+current reader temp Celcius: 29
+current reader temp Celcius: 30
+current reader temp Celcius: 29
+current reader temp Celcius: 30
+current reader temp Celcius: 31
+current reader temp Celcius: 30
+current reader temp Celcius: 30
+current reader temp Celcius: 31
+current reader temp Celcius: 31
+current reader temp Celcius: 31
+current reader temp Celcius: 32
+current reader temp Celcius: 31
+current reader temp Celcius: 32
+current reader temp Celcius: 32
+current reader temp Celcius: 32
+current reader temp Celcius: 32
+current reader temp Celcius: 33
+current reader temp Celcius: 32
+current reader temp Celcius: 32
+current reader temp Celcius: 34
+tag read at: 23:27:14.878367
+tag read at: 23:27:14.913548
+tag read at: 23:27:14.948750
+tag read at: 23:27:14.952714
+tag read at: 23:27:14.985541
+tag read at: 23:27:14.990709
+tag read at: 23:27:14.998464
+tag read at: 23:27:15.006275
+tag read at: 23:27:15.012713
+tag read at: 23:27:15.046734
+tag read at: 23:27:15.051960
+tag read at: 23:27:15.056028
+current reader temp Celcius: 33
+tag read at: 23:27:15.068643
+tag read at: 23:27:15.072841
+tag read at: 23:27:15.079348
+tag read at: 23:27:15.083337
+tag read at: 23:27:15.117741
+tag read at: 23:27:15.123917
+tag read at: 23:27:15.134136
+tag read at: 23:27:15.165708
+tag read at: 23:27:15.169605
+tag read at: 23:27:15.177357
+tag read at: 23:27:15.210127
+tag read at: 23:27:15.214107
+tag read at: 23:27:15.219354
+tag read at: 23:27:15.252119
+tag read at: 23:27:15.256174
+tag read at: 23:27:15.260117
+tag read at: 23:27:15.291635
+tag read at: 23:27:15.296871
+tag read at: 23:27:15.300862
+tag read at: 23:27:15.332382
+tag read at: 23:27:15.336440
+tag read at: 23:27:15.341619
+tag read at: 23:27:15.373136
+tag read at: 23:27:15.378380
+tag read at: 23:27:15.382372
+tag read at: 23:27:15.415152
+tag read at: 23:27:15.419138
+tag read at: 23:27:15.425702
+current reader temp Celcius: 33
+tag read at: 23:27:15.445995
+tag read at: 23:27:15.456447
+tag read at: 23:27:15.461636
+tag read at: 23:27:15.465718
+tag read at: 23:27:15.495989
+tag read at: 23:27:15.501156
+tag read at: 23:27:15.505137
+tag read at: 23:27:15.516695
+tag read at: 23:27:15.524397
+tag read at: 23:27:15.555970
+tag read at: 23:27:15.559899
+tag read at: 23:27:15.565145
+tag read at: 23:27:15.571655
+tag read at: 23:27:15.575712
+tag read at: 23:27:15.613430
+tag read at: 23:27:15.621163
+tag read at: 23:27:15.625149
+tag read at: 23:27:15.639930
+tag read at: 23:27:15.676942
+tag read at: 23:27:15.682162
+current reader temp Celcius: 34
+tag read at: 23:27:15.694828
+tag read at: 23:27:15.699048
+tag read at: 23:27:15.703040
+tag read at: 23:27:15.738309
+tag read at: 23:27:15.742298
+tag read at: 23:27:15.748806
+tag read at: 23:27:15.782828
+tag read at: 23:27:15.790567
+tag read at: 23:27:15.794550
+tag read at: 23:27:15.831082
+tag read at: 23:27:15.835052
+tag read at: 23:27:15.840318
+tag read at: 23:27:15.876893
+tag read at: 23:27:15.880823
+tag read at: 23:27:15.884817
+tag read at: 23:27:15.919579
+tag read at: 23:27:15.924915
+tag read at: 23:27:15.931272
+tag read at: 23:27:15.964044
+tag read at: 23:27:15.969520
+tag read at: 23:27:15.974829
+tag read at: 23:27:16.008564
+tag read at: 23:27:16.015024
+tag read at: 23:27:16.020387
+tag read at: 23:27:16.053062
+tag read at: 23:27:16.058451
+current reader temp Celcius: 34
+tag read at: 23:27:16.070977
+tag read at: 23:27:16.076355
+tag read at: 23:27:16.081785
+tag read at: 23:27:16.115910
+tag read at: 23:27:16.121215
+tag read at: 23:27:16.126554
+tag read at: 23:27:16.160321
+tag read at: 23:27:16.165680
+tag read at: 23:27:16.170967
+tag read at: 23:27:16.202326
+tag read at: 23:27:16.208835
+tag read at: 23:27:16.214138
+tag read at: 23:27:16.245661
+tag read at: 23:27:16.250972
+tag read at: 23:27:16.262331
+tag read at: 23:27:16.296400
+tag read at: 23:27:16.301700
+tag read at: 23:27:16.308087
+tag read at: 23:27:16.340847
+tag read at: 23:27:16.346235
+tag read at: 23:27:16.353822
+tag read at: 23:27:16.386656
+tag read at: 23:27:16.391939
+tag read at: 23:27:16.402088
+tag read at: 23:27:16.434874
+current reader temp Celcius: 34
+tag read at: 23:27:16.447530
+tag read at: 23:27:16.453082
+tag read at: 23:27:16.470872
+tag read at: 23:27:16.493648
+tag read at: 23:27:16.518888
+tag read at: 23:27:16.532874
+tag read at: 23:27:16.539364
+tag read at: 23:27:16.544671
+tag read at: 23:27:16.577430
+tag read at: 23:27:16.582747
+tag read at: 23:27:16.588138
+tag read at: 23:27:16.593435
+tag read at: 23:27:16.625118
+tag read at: 23:27:16.631219
+tag read at: 23:27:16.640169
+tag read at: 23:27:16.660417
+current reader temp Celcius: 35
+tag read at: 23:27:16.694434
+tag read at: 23:27:16.699824
+tag read at: 23:27:16.705119
+tag read at: 23:27:16.710558
+tag read at: 23:27:16.743281
+tag read at: 23:27:16.748684
+tag read at: 23:27:16.753967
+tag read at: 23:27:16.759297
+tag read at: 23:27:16.790534
+tag read at: 23:27:16.795897
+tag read at: 23:27:16.801194
+tag read at: 23:27:16.806601
+tag read at: 23:27:16.839039
+tag read at: 23:27:16.844558
+tag read at: 23:27:16.850023
+tag read at: 23:27:16.855384
+tag read at: 23:27:16.887545
+tag read at: 23:27:16.892844
+tag read at: 23:27:16.898212
+tag read at: 23:27:16.903501
+tag read at: 23:27:16.938565
+tag read at: 23:27:16.943871
+tag read at: 23:27:16.949252
+tag read at: 23:27:16.954536
+tag read at: 23:27:16.990811
+tag read at: 23:27:16.996207
+tag read at: 23:27:17.001481
+tag read at: 23:27:17.006890
+tag read at: 23:27:17.038062
+tag read at: 23:27:17.043355
+tag read at: 23:27:17.048712
+tag read at: 23:27:17.054200
+current reader temp Celcius: 34
+tag read at: 23:27:17.072782
+tag read at: 23:27:17.087140
+tag read at: 23:27:17.107455
+tag read at: 23:27:17.123824
+tag read at: 23:27:17.171587
+tag read at: 23:27:17.176987
+tag read at: 23:27:17.188319
+tag read at: 23:27:17.208583
+tag read at: 23:27:17.251346
+tag read at: 23:27:17.256739
+tag read at: 23:27:17.264320
+tag read at: 23:27:17.284591
+tag read at: 23:27:17.336195
+tag read at: 23:27:17.341498
+tag read at: 23:27:17.346840
+tag read at: 23:27:17.366915
+tag read at: 23:27:17.410862
+tag read at: 23:27:17.416259
+tag read at: 23:27:17.423838
+current reader temp Celcius: 34
+tag read at: 23:27:17.450270
+tag read at: 23:27:17.462108
+tag read at: 23:27:17.484882
+tag read at: 23:27:17.505128
+tag read at: 23:27:17.546709
+tag read at: 23:27:17.552014
+tag read at: 23:27:17.562116
+tag read at: 23:27:17.584869
+tag read at: 23:27:17.630144
+tag read at: 23:27:17.635530
+tag read at: 23:27:17.644365
+tag read at: 23:27:17.664642
+current reader temp Celcius: 35
+tag read at: 23:27:17.696241
+tag read at: 23:27:17.701536
+tag read at: 23:27:17.723282
+tag read at: 23:27:17.741017
+tag read at: 23:27:17.791293
+tag read at: 23:27:17.796673
+tag read at: 23:27:17.801961
+tag read at: 23:27:17.823305
+tag read at: 23:27:17.867395
+tag read at: 23:27:17.872722
+tag read at: 23:27:17.880288
+tag read at: 23:27:17.904296
+tag read at: 23:27:17.947128
+tag read at: 23:27:17.952424
+tag read at: 23:27:17.958789
+tag read at: 23:27:17.979059
+tag read at: 23:27:18.026891
+tag read at: 23:27:18.033294
+tag read at: 23:27:18.039793
+current reader temp Celcius: 34
+tag read at: 23:27:18.069972
+tag read at: 23:27:18.078062
+tag read at: 23:27:18.098319
+tag read at: 23:27:18.121493
+tag read at: 23:27:18.165196
+tag read at: 23:27:18.170683
+tag read at: 23:27:18.180605
+tag read at: 23:27:18.199596
+tag read at: 23:27:18.244880
+tag read at: 23:27:18.250288
+tag read at: 23:27:18.260343
+tag read at: 23:27:18.278093
+tag read at: 23:27:18.323364
+tag read at: 23:27:18.328773
+tag read at: 23:27:18.337618
+tag read at: 23:27:18.359114
+tag read at: 23:27:18.381860
+tag read at: 23:27:18.424635
+tag read at: 23:27:18.430042
+current reader temp Celcius: 34
+tag read at: 23:27:18.447536
+tag read at: 23:27:18.458111
+tag read at: 23:27:18.475974
+tag read at: 23:27:18.499886
+tag read at: 23:27:18.542657
+tag read at: 23:27:18.548058
+tag read at: 23:27:18.559374
+tag read at: 23:27:18.579635
+tag read at: 23:27:18.622399
+tag read at: 23:27:18.627787
+tag read at: 23:27:18.645451
+tag read at: 23:27:18.654372
+current reader temp Celcius: 35
+tag read at: 23:27:18.697188
+tag read at: 23:27:18.702470
+tag read at: 23:27:18.718033
+tag read at: 23:27:18.737088
+tag read at: 23:27:18.781562
+tag read at: 23:27:18.787525
+tag read at: 23:27:18.794008
+tag read at: 23:27:18.811794
+tag read at: 23:27:18.859609
+tag read at: 23:27:18.864942
+tag read at: 23:27:18.873796
+tag read at: 23:27:18.894050
+tag read at: 23:27:18.943082
+tag read at: 23:27:18.948481
+tag read at: 23:27:18.953777
+tag read at: 23:27:18.972563
+tag read at: 23:27:19.020328
+tag read at: 23:27:19.025707
+tag read at: 23:27:19.032057
+tag read at: 23:27:19.054823
+current reader temp Celcius: 35
+tag read at: 23:27:19.078738
+tag read at: 23:27:19.093072
+tag read at: 23:27:19.113336
+tag read at: 23:27:19.158596
+tag read at: 23:27:19.163899
+tag read at: 23:27:19.170317
+tag read at: 23:27:19.193090
+tag read at: 23:27:19.235945
+tag read at: 23:27:19.241239
+tag read at: 23:27:19.248836
+tag read at: 23:27:19.272850
+tag read at: 23:27:19.316937
+tag read at: 23:27:19.322232
+tag read at: 23:27:19.331088
+tag read at: 23:27:19.352609
+tag read at: 23:27:19.396691
+tag read at: 23:27:19.401985
+tag read at: 23:27:19.414623
+tag read at: 23:27:19.428618
+current reader temp Celcius: 35
+tag read at: 23:27:19.456361
+tag read at: 23:27:19.469392
+tag read at: 23:27:19.488386
+tag read at: 23:27:19.509888
+tag read at: 23:27:19.528884
+tag read at: 23:27:19.576725
+tag read at: 23:27:19.582015
+tag read at: 23:27:19.593376
+tag read at: 23:27:19.609476
+tag read at: 23:27:19.629600
+tag read at: 23:27:19.676056
+tag read at: 23:27:19.682185
+current reader temp Celcius: 36
+tag read at: 23:27:19.697558
+tag read at: 23:27:19.708222
+tag read at: 23:27:19.729648
+tag read at: 23:27:19.747562
+tag read at: 23:27:19.771439
+tag read at: 23:27:19.819221
+tag read at: 23:27:19.825270
+tag read at: 23:27:19.832220
+tag read at: 23:27:19.849988
+tag read at: 23:27:19.897800
+tag read at: 23:27:19.903889
+tag read at: 23:27:19.910105
+tag read at: 23:27:19.926022
+tag read at: 23:27:19.977526
+tag read at: 23:27:19.983565
+tag read at: 23:27:19.989668
+tag read at: 23:27:20.040776
+tag read at: 23:27:20.046991
+tag read at: 23:27:20.053045
+current reader temp Celcius: 35
+tag read at: 23:27:20.073830
+tag read at: 23:27:20.085775
+tag read at: 23:27:20.107398
+tag read at: 23:27:20.153728
+tag read at: 23:27:20.159931
+tag read at: 23:27:20.190485
+tag read at: 23:27:20.196609
+tag read at: 23:27:20.231030
+tag read at: 23:27:20.237234
+tag read at: 23:27:20.269489
+tag read at: 23:27:20.275471
+tag read at: 23:27:20.309389
+tag read at: 23:27:20.315435
+tag read at: 23:27:20.349863
+tag read at: 23:27:20.355925
+tag read at: 23:27:20.387845
+tag read at: 23:27:20.393842
+tag read at: 23:27:20.428389
+tag read at: 23:27:20.434350
+current reader temp Celcius: 35
+tag read at: 23:27:20.451295
+tag read at: 23:27:20.464373
+tag read at: 23:27:20.509673
+tag read at: 23:27:20.515769
+tag read at: 23:27:20.556475
+tag read at: 23:27:20.565445
+tag read at: 23:27:20.601906
+tag read at: 23:27:20.608059
+tag read at: 23:27:20.641131
+tag read at: 23:27:20.678954
+current reader temp Celcius: 36
+tag read at: 23:27:20.808052
+tag read at: 23:27:20.841094
+tag read at: 23:27:20.877651
+tag read at: 23:27:20.912843
+tag read at: 23:27:20.948077
+tag read at: 23:27:20.984629
+tag read at: 23:27:21.018572
+tag read at: 23:27:21.056445
+current reader temp Celcius: 36
+tag read at: 23:27:21.075264
+tag read at: 23:27:21.109619
+tag read at: 23:27:21.142861
+tag read at: 23:27:21.178942
+tag read at: 23:27:21.211681
+tag read at: 23:27:21.245775
+tag read at: 23:27:21.280880
+tag read at: 23:27:21.314882
+tag read at: 23:27:21.348914
+tag read at: 23:27:21.384163
+tag read at: 23:27:21.415718
+current reader temp Celcius: 36
+tag read at: 23:27:21.450772
+tag read at: 23:27:21.476507
+tag read at: 23:27:21.511667
+tag read at: 23:27:21.548160
+tag read at: 23:27:21.582152
+tag read at: 23:27:21.616217
+tag read at: 23:27:21.653886
+current reader temp Celcius: 37
+tag read at: 23:27:21.698040
+tag read at: 23:27:21.732431
+tag read at: 23:27:21.767712
+tag read at: 23:27:21.800489
+tag read at: 23:27:21.835804
+tag read at: 23:27:21.872224
+tag read at: 23:27:21.907625
+tag read at: 23:27:21.940209
+tag read at: 23:27:21.977993
+current reader temp Celcius: 36
+tag read at: 23:27:22.223478
+current reader temp Celcius: 36
+current reader temp Celcius: 37
+current reader temp Celcius: 37
+current reader temp Celcius: 36
+current reader temp Celcius: 37
+current reader temp Celcius: 36
+current reader temp Celcius: 36
+current reader temp Celcius: 37
+current reader temp Celcius: 36
+current reader temp Celcius: 37
+current reader temp Celcius: 38
+current reader temp Celcius: 37
+current reader temp Celcius: 37
+current reader temp Celcius: 38
+current reader temp Celcius: 37
