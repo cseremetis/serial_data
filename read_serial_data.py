@@ -12,7 +12,8 @@ def reset_log():
     logfile.close()
 
 def scan(ser, logfile):
-    cn1 = 0
+    temp2 = 0
+    cnt = 0
     #while True:
     #CASE 0: first time through loop
     if cnt == 0:#need read until we get an ff
@@ -67,18 +68,22 @@ def scan(ser, logfile):
         logfile.write("\n")
 
     #CASE 2: read data
-    if len(list_converted)==10:
+    #if len(list_converted)==10:
         #print "tag id: ",
-        logfile.write("tag read at: ")
-        logfile.write(str(datetime.datetime.now().time()))
-        logfile.write("\n")
+        #logfile.write("tag read at: ")
+        #logfile.write(str(datetime.datetime.now().time()))
+        #logfile.write("\n")
 
     #CASE 2.5: read second part of data
     if len(list_converted)==42:
         tagid=[]
-        tagid=list_converted[22-37]
+        tagid=list_converted[22:37]
         print "tag id: ",
         print tagid,
         print " read"
-
+        logfile.write("tag id: ")
+        logfile.write(str(tagid))
+        logfile.write("\n   -read at time= ")
+        logfile.write(str(datetime.datetime.now().time()))
+        logfile.write("\n")
     return temp2

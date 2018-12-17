@@ -1,0 +1,2 @@
+current reader temp Celcius: 28
+current reader temp Celcius: 29
