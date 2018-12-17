@@ -12,5 +12,4 @@ def setCRC(message, offset, length):
 
     return crc
 
-def translate(hex):
-    #...
+
