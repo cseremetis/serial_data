@@ -1,6 +1,19 @@
 import serial
 import datetime
 import temperature
+from gpiozero import LED
+from time import sleep
+from threading import Thread
+
+def turn_led_on():
+    led = LED(25)
+    led.on()
+    sleep(2)
+    led.off()
+
+def start_led_thread():
+    t = Thread(target=turn_led_on)
+    t.start()
 
 def reset_log():
     #OPEN LOG FILE
@@ -76,6 +89,7 @@ def scan(ser, logfile):
 
     #CASE 2.5: read second part of data
     if len(list_converted)==42:
+        start_led_thread()
         tagid=[]
         tagid=list_converted[22:37]
         print "tag id: ",
