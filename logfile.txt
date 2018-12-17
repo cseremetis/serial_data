@@ -1,9 +1,0 @@
-tag read at: 00:41:18.117780
-current reader temp Celcius: 29
-current reader temp Celcius: 28
-current reader temp Celcius: 28
-current reader temp Celcius: 29
-current reader temp Celcius: 29
-current reader temp Celcius: 29
-current reader temp Celcius: 30
-current reader temp Celcius: 30
