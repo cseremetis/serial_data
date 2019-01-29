@@ -1,9 +1,10 @@
 import serial
 import datetime
-import temperature
+import .temperature
 from gpiozero import LED
 from time import sleep
 from threading import Thread
+
 
 def turn_led_on():
     led = LED(25)
@@ -49,14 +50,14 @@ def scan(ser, logfile):
 
     #COVERT LIST TO HEX: convert the list to hex and store it in converted list
     list_converted=[]
-    print len(list_tmp),
-    print ": ",
+    print(len(list_tmp), end='')
+    print(": ", end='')
     for i in range(len(list_tmp)):
         list_converted.append(list_tmp[i].encode('hex'))
         #print the list out
-        print list_converted[i],
-    print " : ",
-    print len(list_tmp)
+        print(list_converted[i],end='')
+    print(" : ", end='')
+    print(len(list_tmp))
     #print
 
     ###########################################################################
@@ -73,9 +74,8 @@ def scan(ser, logfile):
     if len(list_converted)==18:
         temp=list_converted[14]
         temp2=int(temp, 16)
-        print "current reader temp Celcius: ",
-        print temp2,
-        print
+        print("current reader temp Celcius: ", end='')
+        print(temp2)
         logfile.write("current reader temp Celcius: ")
         logfile.write(str(temp2))
         logfile.write("\n")
@@ -92,9 +92,9 @@ def scan(ser, logfile):
         start_led_thread()
         tagid=[]
         tagid=list_converted[22:37]
-        print "tag id: ",
-        print tagid,
-        print " read"
+        print("tag id: ", end='')
+        print(tagid,end='')
+        print(" read")
         logfile.write("tag id: ")
         logfile.write(str(tagid))
         logfile.write("\n   -read at time= ")
