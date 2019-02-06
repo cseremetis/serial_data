@@ -5,44 +5,61 @@ from gpiozero import LED
 from time import sleep
 from threading import Thread
 
+LEDPIN = 21
+ENABLEPIN = 20
+
 
 def turn_led_on():
-    led = LED(25)
+    led = LED(LEDPIN)
     led.on()
     sleep(2)
     led.off()
+
 
 def start_led_thread():
     t = Thread(target=turn_led_on)
     t.start()
 
+
+def turn_reader_on():
+    reader = LED(ENABLEPIN)
+    reader.on()
+
+
+def turn_reader_off():
+    reader = LED(ENABLEPIN)
+    reader.off()
+
+
 def reset_log():
-    #OPEN LOG FILE
-    #clear it
-    logfile=open("logfile.txt",'w')
+    # OPEN LOG FILE
+    # clear it
+    logfile = open("logfile.txt", 'w')
     logfile.close()
-    #open it for appending
-    logfile=open("logfile.txt",'a')
+    # open it for appending
+    logfile = open("logfile.txt", 'a')
     logfile.close()
+
 
 def scan(ser, logfile):
     temp2 = 0
     cnt = 0
-    #while True:
-    #CASE 0: first time through loop
-    if cnt == 0:#need read until we get an ff
-        current=''#initialize current to empty
-        while current.encode('hex')!='ff':#keep reading until we get ff
-            current=ser.read(1)
-            cnt=2
+    # while True:
+    # CASE 0: first time through loop
+    if cnt == 0:  # need read until we get an ff
+        current = ''  # initialize current to empty
+        while current.encode('hex') != 'ff':  # keep reading until we get ff
+            current = ser.read(1)
+            cnt = 2
 
-#CASE 1: second time current will have 'ff' from previous packet
+    # CASE 1: second time current will have 'ff' from previous packet
 
-#MAKE THE LIST: read the whole packet into list_tmp
-#	step 1: add the first ff to the list
+    # MAKE THE LIST: read the whole packet into list_tmp
+
+    # step 1: add the first ff to the list
     list_tmp=[]
     list_tmp.append(current)
-#	step 2: loop through until we hit the next ff adding to list
+    # step 2: loop through until we hit the next ff adding to list
     current='00'
     while current.encode('hex')!='ff':
         current=ser.read(1)
@@ -88,7 +105,7 @@ def scan(ser, logfile):
         #logfile.write("\n")
 
     #CASE 2.5: read second part of data
-    if len(list_converted)==42:
+    if len(list_converted) == 42:
         start_led_thread()
         tagid=[]
         tagid=list_converted[22:37]

@@ -16,10 +16,15 @@ s.listen(1)
 print("Started listening on %s, port %d" %(TCP_IP, TCP_PORT))
 
 conn, addr = s.accept()
-print("Connection Address: %s" % addr)
+print("Connection Address:")
+print(addr)
 while 1:
     data = conn.recv(BUFFERSIZE)
     if not data: break
-    print("Received data: %s" % data)
-    conn.send(data)  # echo
+    elif data == "REQUEST TASK".encode():
+        print("TASK REQUEST RECEIVED")
+        conn.send("COMMAND: SCAN AISLE 5".encode())
+    else:
+        print("Received data: %s" % data)
+        conn.send(data)  # echo
 conn.close()
