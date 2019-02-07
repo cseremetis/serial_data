@@ -5,8 +5,13 @@ from gpiozero import LED
 from time import sleep
 from threading import Thread
 
-LEDPIN = 21
-ENABLEPIN = 20
+# RPI 3 B+
+LEDPIN = 20
+ENABLEPIN = 21
+
+# RPI 2 B
+# LEDPIN = 25
+# ENABLEPIN = 27
 
 
 def turn_led_on():
