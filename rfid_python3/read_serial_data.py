@@ -6,8 +6,8 @@ from time import sleep
 from threading import Thread
 
 # RPI 3 B+
-LEDPIN = 20
-ENABLEPIN = 21
+LEDPIN = 16
+ENABLEPIN = 26
 
 # RPI 2 B
 # LEDPIN = 25

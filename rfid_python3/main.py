@@ -21,11 +21,11 @@ while True:
     else:
         ser.close()
         # cut_power()
-        turn_reader_off()
+        # turn_reader_off()
         time.sleep(3) #must call python -u to enable this
         print("reloading reader")
         # enable_power()
-        turn_reader_on()
+        # turn_reader_on()
         time.sleep(3) #wait for power to return to the serial port
         ser = serial.Serial('/dev/ttyACM0')
         cnt = 0
