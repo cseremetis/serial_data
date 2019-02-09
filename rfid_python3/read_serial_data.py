@@ -26,14 +26,12 @@ def start_led_thread():
     t.start()
 
 
-def turn_reader_on():
-    reader = LED(ENABLEPIN)
-    reader.on()
+def turn_reader_on(readergpio):
+    readergpio.on()
 
 
-def turn_reader_off():
-    reader = LED(ENABLEPIN)
-    reader.off()
+def turn_reader_off(readergpio):
+    readergpio.off()
 
 
 def reset_log():
