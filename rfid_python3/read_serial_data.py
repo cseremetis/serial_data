@@ -1,7 +1,6 @@
 import serial
 import datetime
 from . import temperature
-from gpiozero import LED
 from time import sleep
 from threading import Thread
 
@@ -13,7 +12,7 @@ ENABLEPIN = 26
 # LEDPIN = 25
 # ENABLEPIN = 27
 
-
+"""
 def turn_led_on():
     led = LED(LEDPIN)
     led.on()
@@ -24,6 +23,7 @@ def turn_led_on():
 def start_led_thread():
     t = Thread(target=turn_led_on)
     t.start()
+"""
 
 
 def turn_reader_on(readergpio):
@@ -44,7 +44,39 @@ def reset_log():
     logfile.close()
 
 
-def scan(ser, logfile):
+def scan(ser):
+    temp2 = 0
+    cnt = 0
+    byteList = []
+    currByte = b''
+    # Read until we get the first 'ff' - marks start of data
+    # TODO - could optimize by not comparing 'ff' string and direct byte instead
+    while currByte.hex() != 'ff':
+        currByte = ser.read(1)
+    byteList.append(currByte)
+    currByte = b''
+    while currByte.hex() != 'ff':
+        currByte = ser.read(1)
+        byteList.append(currByte)
+    # Printing the line
+    for byte in byteList:
+        print(byte.hex(), end=' ')
+    listSize = len(byteList)
+    print(": %d" % listSize)
+    # Case 1 - Temperature Data
+    if listSize == 18:
+        temperature = int(byteList[14], 16)
+        print("Current Reader Temperature (Celsius): %d" % temperature)
+    elif listSize == 42:
+        tagid = []
+        tagid = byteList[22:37]
+        # Printing Tag ID
+        print("Tag ID: ", end='')
+        for i in tagid:
+            print(i.hex(), end=' ')
+
+
+def scanOLD(ser, logfile):
     temp2 = 0
     cnt = 0
     # while True:
@@ -109,7 +141,7 @@ def scan(ser, logfile):
 
     #CASE 2.5: read second part of data
     if len(list_converted) == 42:
-        start_led_thread()
+        # start_led_thread()
         tagid=[]
         tagid=list_converted[22:37]
         print("tag id: ", end='')
