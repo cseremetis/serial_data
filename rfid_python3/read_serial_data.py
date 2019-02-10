@@ -63,6 +63,10 @@ def scan(ser):
         print(byte.hex(), end=' ')
     listSize = len(byteList)
     print(": %d" % listSize)
+    return byteList
+
+def decodeBytes(byteList):
+    listSize = len(byteList)
     # Case 1 - Temperature Data
     if listSize == 18:
         temperature = int(byteList[14].hex(), 16)

@@ -3,12 +3,13 @@ import datetime
 import time
 import subprocess
 import atexit  # make sure device shuts down properly
-from .temperature import cut_power, enable_power
-from .read_serial_data import reset_log, scan, start_led_thread, turn_reader_on, turn_reader_off
+try:  # Works w/ Python 3.6 onwards
+    # from .temperature import cut_power, enable_power
+    from .read_serial_data import reset_log, scan, decodeBytes
+except ImportError:  # Works w/ Python 3.5 and below
+    from read_serial_data import reset_log, scan, decodeBytes
 from gpiozero import OutputDevice, LED
 
-enable_power()  #allow power to flow to the reader
-time.sleep(5)  #buffering time for power to return to port
 
 reset_log()
 ser = serial.Serial('/dev/ttyACM0')
@@ -21,18 +22,20 @@ ledPin = 16
 reader = OutputDevice(readerPin)
 led = LED(ledPin)
 
+# Turn on reader - enable current flow through device via MOSFET
+reader.on()
 while True:
+    # Get 30 chunks of data from the RFID reader
     if cnt != 30:
-        scan(ser, logfile)
+        byteList = scan(ser)
+        decodeBytes(byteList)
         cnt = cnt+1
     else:
         ser.close()
-        # cut_power()
-        reader.on()
-        time.sleep(3)  # must call python -u to enable this
-        print("reloading reader")
-        # enable_power()
         reader.off()
+        time.sleep(2)  # must call python -u to enable this
+        print("reloading reader")
+        reader.on()
         time.sleep(3)  # wait for power to return to the serial port
         ser = serial.Serial('/dev/ttyACM0')
         cnt = 0
@@ -40,5 +43,7 @@ while True:
 @atexit.register
 def goodbye():
     ser.close() #shut down the com port
-    cut_power() #shut down power to port on termination
+    reader.off()
+    led.off()
+    # cut_power() #shut down power to port on termination
     logfile.close()
