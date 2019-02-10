@@ -65,7 +65,7 @@ def scan(ser):
     print(": %d" % listSize)
     # Case 1 - Temperature Data
     if listSize == 18:
-        temperature = int(byteList[14], 16)
+        temperature = int(byteList[14].hex(), 16)
         print("Current Reader Temperature (Celsius): %d" % temperature)
     elif listSize == 42:
         tagid = []
@@ -74,6 +74,7 @@ def scan(ser):
         print("Tag ID: ", end='')
         for i in tagid:
             print(i.hex(), end=' ')
+        print('')
 
 
 def scanOLD(ser, logfile):
