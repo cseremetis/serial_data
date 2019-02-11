@@ -1,6 +1,6 @@
 import serial
 import datetime
-from . import temperature
+import temperature
 from time import sleep
 from threading import Thread
 

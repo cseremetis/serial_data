@@ -6,24 +6,25 @@ import atexit  # make sure device shuts down properly
 try:  # Works w/ Python 3.6 onwards
     # from .temperature import cut_power, enable_power
     from .read_serial_data import reset_log, scan, decodeBytes
-except ImportError:  # Works w/ Python 3.5 and below
+except SystemError:  # Works w/ Python 3.5 and below
     from read_serial_data import reset_log, scan, decodeBytes
 from gpiozero import OutputDevice, LED
 
 
-reset_log()
-ser = serial.Serial('/dev/ttyACM0')
-print(ser.name)
-logfile = open("logfile.txt", 'a')
-cnt = 0
 # Instancing GPIO pins for LED (read indicator) and reader enable
 readerPin = 26
 ledPin = 16
 reader = OutputDevice(readerPin)
 led = LED(ledPin)
-
+time.sleep(3)
+reset_log()
 # Turn on reader - enable current flow through device via MOSFET
 reader.on()
+ser = serial.Serial('/dev/ttyACM0')
+print(ser.name)
+logfile = open("logfile.txt", 'a')
+cnt = 0
+
 while True:
     # Get 30 chunks of data from the RFID reader
     if cnt != 30:
@@ -33,10 +34,12 @@ while True:
     else:
         ser.close()
         reader.off()
+        led.on()
         time.sleep(2)  # must call python -u to enable this
         print("reloading reader")
         reader.on()
-        time.sleep(3)  # wait for power to return to the serial port
+        led.off()
+        time.sleep(2)  # wait for power to return to the serial port
         ser = serial.Serial('/dev/ttyACM0')
         cnt = 0
 
