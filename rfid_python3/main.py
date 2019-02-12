@@ -42,10 +42,10 @@ while True:
     if cnt != 30:
         try:
             byteList = scan(ser)
+            decodeBytes(byteList, led)
         except:
             goodbye()
             exit()
-        decodeBytes(byteList, led)
         cnt = cnt+1
     else:
         ser.close()

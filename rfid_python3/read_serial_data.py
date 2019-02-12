@@ -18,7 +18,7 @@ def turn_led_on(led):
         return
     else:
         led.on()
-        sleep(2)
+        sleep(1)
         led.off()
 
 
@@ -67,6 +67,7 @@ def scan(ser):
     print(": %d" % listSize)
     return byteList
 
+
 def decodeBytes(byteList, led):
     listSize = len(byteList)
     # Case 1 - Temperature Data
@@ -82,6 +83,7 @@ def decodeBytes(byteList, led):
         for i in tagid:
             print(i.hex(), end=' ')
         print('')
+
 
 
 def scanOLD(ser, logfile):
