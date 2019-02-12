@@ -29,7 +29,7 @@ while True:
     # Get 30 chunks of data from the RFID reader
     if cnt != 30:
         byteList = scan(ser)
-        decodeBytes(byteList)
+        decodeBytes(byteList, led)
         cnt = cnt+1
     else:
         ser.close()
@@ -42,6 +42,7 @@ while True:
         time.sleep(2)  # wait for power to return to the serial port
         ser = serial.Serial('/dev/ttyACM0')
         cnt = 0
+
 
 @atexit.register
 def goodbye():
