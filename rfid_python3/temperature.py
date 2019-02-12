@@ -8,14 +8,16 @@ import time #for multithreading
 #the directory
 
 def cut_power():
-    bash = "sudo uhubctl -a off -p 2"
+    #location 1-1, port 4; "-a off" sends the command to cut power
+    bash = "sudo uhubctl -l1-1 -p 4 -a off"
     process = subprocess.Popen(bash.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
     
     print(output)
 
 def enable_power():
-    bash = "sudo uhubctl -a on -p 2"
+    #location 1-1, port 4; "-a on" sends the command to enable power
+    bash = "sudo uhubctl -l1-1 -p 4 -a on"
     process = subprocess.Popen(bash.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
 
