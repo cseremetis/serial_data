@@ -53,6 +53,7 @@ def scan(ser):
     # Read until we get the first 'ff' - marks start of data
     # TODO - could optimize by not comparing 'ff' string and direct byte instead
     while currByte.hex() != 'ff':
+        print(currByte.hex())  # ADDED FROM PI
         currByte = ser.read(1)
     byteList.append(currByte)
     currByte = b''
