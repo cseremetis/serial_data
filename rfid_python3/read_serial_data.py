@@ -12,18 +12,19 @@ ENABLEPIN = 26
 # LEDPIN = 25
 # ENABLEPIN = 27
 
-"""
-def turn_led_on():
-    led = LED(LEDPIN)
-    led.on()
-    sleep(2)
-    led.off()
+
+def turn_led_on(led):
+    if led.is_active:
+        return
+    else:
+        led.on()
+        sleep(2)
+        led.off()
 
 
-def start_led_thread():
-    t = Thread(target=turn_led_on)
+def start_led_thread(led):
+    t = Thread(target=turn_led_on, args=[led])
     t.start()
-"""
 
 
 def turn_reader_on(readergpio):
@@ -52,6 +53,7 @@ def scan(ser):
     # Read until we get the first 'ff' - marks start of data
     # TODO - could optimize by not comparing 'ff' string and direct byte instead
     while currByte.hex() != 'ff':
+        print(currByte.hex())  # ADDED FROM PI
         currByte = ser.read(1)
     byteList.append(currByte)
     currByte = b''
@@ -65,13 +67,14 @@ def scan(ser):
     print(": %d" % listSize)
     return byteList
 
-def decodeBytes(byteList):
+def decodeBytes(byteList, led):
     listSize = len(byteList)
     # Case 1 - Temperature Data
     if listSize == 18:
         temperature = int(byteList[14].hex(), 16)
         print("Current Reader Temperature (Celsius): %d" % temperature)
     elif listSize == 42:
+        start_led_thread(led)
         tagid = []
         tagid = byteList[22:37]
         # Printing Tag ID
