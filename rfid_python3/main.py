@@ -6,8 +6,10 @@ import atexit  # make sure device shuts down properly
 try:  # Works w/ Python 3.6 onwards
     # from .temperature import cut_power, enable_power
     from .read_serial_data import reset_log, scan, decodeBytes
+    from .temperature import cut_power, enable_power
 except SystemError:  # Works w/ Python 3.5 and below
     from read_serial_data import reset_log, scan, decodeBytes
+    from temperature import cut_power, enable_power
 from gpiozero import OutputDevice, LED
 
 
@@ -50,10 +52,12 @@ while True:
     else:
         ser.close()
         reader.off()
+        cut_power()
         led.on()
         time.sleep(5)  # must call python -u to enable this
         print("reloading reader")
         reader.on()
+        enable_power()
         led.off()
         time.sleep(1)  # wait for power to return to the serial port
         ser = serial.Serial('/dev/ttyACM0')

@@ -1,11 +1,14 @@
 import subprocess #to run bash commands
 import time #for multithreading
 
-#power supply functions use uhubctl
-#if unavailable, run
-#sudo apt-get install libusb-1.0-0-dev
-#go to github.com/mvp/uhubctl and clone
-#the directory
+# power supply functions use uhubctl
+# if unavailable, run
+# sudo apt-get install libusb-1.0-0-dev
+# go to github.com/mvp/uhubctl and clone
+# the directory
+
+# TODO - Make it so that we can take the port numbers as arguments
+
 
 def cut_power():
     #location 1-1, port 4; "-a off" sends the command to cut power
